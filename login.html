@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/page.css">
+    <style>
+        .main{
+            height: 650px;
+        }
+        .login{
+            display: inline-block;
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+        }
+        .title_id{
+            display: inline-block;
+            left: 40px;
+            position: absolute;
+            font-size: 20px;
+            padding: 10px 10px;
+            
+        }
+        .title_pwd{
+            left: 30px;
+            top: 70px;
+            position: absolute;
+            font-size: 20px;
+            padding: 10px 10px;
+        }
+        .input_id{
+            left: 150px;
+            position: absolute;
+            width: 220px;
+            height: 40px;
+            margin-top: 5px;
+            padding: 0px 7px;
+        }
+        .input_pwd{
+            left: 150px;
+            top: 70px;
+            position: absolute;
+            width: 220px;
+            height: 40px;
+            padding: 0px 7px;
+        }
+        .login_button{
+            width: 100px;
+            height: 110px;
+            top: 5px;
+            right: 100px;
+            position: absolute;
+            border-radius: 10px;
+            border: 1px solid gainsboro;
+            background-color: dodgerblue;
+        }
+        .login a:nth-child(2){
+            position: absolute;
+            top: 130px;
+            left: 140px;
+        }
+        .login a:nth-child(3){
+            position: absolute;
+            top: 130px;
+            right: 200px;
+        }
+        .login a:nth-child(4){
+            position: absolute;
+            bottom: 90px;
+            left: 175px;
+            width: 200px;
+            height: 40px;
+            background-color: aqua;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 5px;
+            font-size: 15px;
+            background-color: gainsboro;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="top_banner">
+            <img src="./image/banner/banner_image.jpg" class="background_image">
+            <div class="homepage">
+                <img src="./image/logo/logo.png" class="logo">
+                <a href="./mainpage.html">Glazed daily life</a>
+            </div>
+            <div class="right_top_banner">
+                <a>로그인</a>
+                <a href="./signup.html">회원가입</a>
+                <a class="site">사이트설명</a>
+                <div class="site_explan">
+                    해당 사이트는 Glazed Lee의 음식, 여행, 유머, 게임 등의 내용을 다루는 사이트입니다.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="login">
+            <form action="" name="login" >
+                <ul>
+                    <li class="title_id">아이디</li>
+                    <li><input class="input_id" type="text" name="id" id="id" required placeholder="아이디 입력"></li>
+                </ul>
+                <input type="button" value="로그인" class="login_button">
+                <ul>
+                    <li class="title_pwd"><label for="password">비밀번호</label></li>
+                    <li><input class="input_pwd" type="password" name="password" id="password" required placeholder="비밀번호 입력"></li>
+                </ul>
+            </form>
+            <a href="#">아이디 찾기</a>
+            <a href="#">비밀번호 찾기</a>
+            <a href="./mainpage.html">홈페이지로 돌아가기</a>
+            
+        </div>
+    </div>
+    <div class="lower_banner">
+        <a href="">공지사항</a> |
+        <a href="">이용약관</a> |
+        <a href="">이메일무단수집거부</a> |
+        <a href="./report.html">제보방법</a> |
+        <a href="">정보공개알림</a>
+    </div>
+    
+</body>
+</html>

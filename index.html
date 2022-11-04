@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Glazed daily life</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <style>
+        .main{  /* main 상자의 높이 고정 */
+            height: 700px;
+        }
+        .main a:nth-child(1){   /* 각 상자의 크기와 위치, 상자모양 조정 */
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            background-color: rgb(142, 169, 219);
+            border-radius: 30px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 40px;
+            left: 10%;
+            top: 10%;
+        }
+        .main a:nth-child(2){
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            background-color: rgb(142, 169, 219);
+            border-radius: 30px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 40px;
+            right: 10%;
+            top: 10%;
+        }
+        .main a:nth-child(3){
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            background-color: rgb(142, 169, 219);
+            border-radius: 30px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 40px;
+            top: 275px;
+            left: 500px;
+        }
+        .main a:nth-child(4){
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            background-color: rgb(142, 169, 219);
+            border-radius: 30px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 40px;
+            left: 10%;
+            bottom: 10%;
+        }
+        .main a:nth-child(5){
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            background-color: rgb(142, 169, 219);
+            border-radius: 30px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 40px;
+            right: 10%;
+            bottom: 10%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="top_banner">
+            <img src="./image/banner/banner_image.jpg" class="background_image">
+            <div class="homepage">
+                <img src="./image/logo/logo.png" class="logo">
+                <a href="./mainpage.html">Glazed daily life</a>
+            </div>
+            <div class="right_top_banner">
+                <a href="./login.html">로그인</a>
+                <a href="./signup.html">회원가입</a>
+                <a class="site">사이트설명</a>
+                <div class="site_explan">
+                    해당 사이트는 Glazed Lee의 음식, 여행, 유머, 게임 등의 내용을 다루는 사이트입니다.
+                </div>
+            </div>
+        </div>
+        <div class="menu">  <!-- 상단 메뉴칸 -->
+            <a href="./cookpage.html">음식</a>
+            <a href="./travelpage.html">여행</a>
+            <a href="./humorpage.html">유머</a>
+            <a href="./gamepage.html">게임</a>
+            <a href="./freepage.html">자유</a>
+        </div>
+    </div>
+    <div class="main">  <!-- 메인 상자 내의 링크 -->
+        <a href="./cookpage.html">음식</a>
+        <a href="./travelpage.html">여행</a>
+        <a href="./humorpage.html">유머</a>
+        <a href="./gamepage.html">게임</a>
+        <a href="./freepage.html">자유</a>
+    </div>
+    <div class="lower_banner">  <!-- 하단 메뉴 -->
+        <a href="">공지사항</a> |
+        <a href="">이용약관</a> |
+        <a href="">이메일무단수집거부</a> |
+        <a href="./report.html">제보방법</a> |
+        <a href="">정보공개알림</a>
+    </div>
+    
+</body>
+</html>

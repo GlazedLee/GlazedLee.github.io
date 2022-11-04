@@ -1,0 +1,15 @@
+.menu{
+    width: 1200px;
+    padding: 0px 10px;
+}
+.menu a{
+    background-color: gainsboro;
+    border-radius: 5px;
+    width: 1200px;
+    padding: 0px 90px;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.menu a:hover{
+    background-color: gray;
+}

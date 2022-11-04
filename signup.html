@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/page.css">
+    <style>
+        .main{
+            height: 700px;
+        }
+        .signup_menu{
+            width: 1200px;
+            height: 50px;
+            line-height: 45px;
+            border-bottom: 2px solid gainsboro;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 500;
+        }
+        .signup_input{
+            width: 700px;
+            height: 370px;
+            position: absolute;
+            left: 250px;
+            
+            margin-top: 80px;
+        }
+        .signup_input ul{
+            height: 30px;
+            line-height: 30px;
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            margin-left: 100px;
+        }
+        .input_id{
+            width: 200px;
+            height: 30px;
+            position: absolute;
+            left: 250px;
+            top: 10px;
+            border-radius: 5px;
+            border: 1px solid gainsboro;
+            padding: 0px 6px;
+        }
+        .id_check{
+            position: absolute;
+            height: 30px;
+            width: 80px;
+            right: 140px;
+            top: 10px;
+            border-radius: 5px;
+            border: 1px solid gainsboro;
+            background-color: gainsboro;
+        }
+        .input_pwd{
+            width: 200px;
+            height: 30px;
+            position: absolute;
+            left: 250px;
+            top: 70px;
+            border-radius: 5px;
+            border: 1px solid gainsboro;
+            padding: 0px 6px;
+        }
+        .input_pwd_check{
+            width: 200px;
+            height: 30px;
+            position: absolute;
+            left: 250px;
+            top: 130px;
+            border-radius: 5px;
+            border: 1px solid gainsboro;
+            padding: 0px 6px;
+        }
+        .email{
+            width: 200px;
+            height: 30px;
+            position: absolute;
+            left: 250px;
+            top: 190px;
+            border-radius: 5px;
+            border: 1px solid gainsboro;
+            padding: 0px 6px;
+        }
+        .gender{
+            position: absolute;
+            bottom: 90px;
+            left: 280px;
+        }
+        .submit{
+            width: 100px;
+            height: 40px;
+            background-color: dodgerblue;
+            border-radius: 10px;
+            border: 1px solid gainsboro;
+            position: absolute;
+            bottom: 20px;
+            left: 190px;
+            font-size: 14px;
+        }
+        .reset{
+            width: 100px;
+            height: 40px;
+            background-color: grey;
+            border-radius: 10px;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 20px;
+            left: 390px;
+            font-size: 14px;
+        }
+        .back_home a{
+            text-align: center;
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: gainsboro;
+            position: absolute;
+            bottom: 200px;
+            left: 450px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="top_banner">
+            <img src="./image/banner/banner_image.jpg" class="background_image">
+            <div class="homepage">
+                <img src="./image/logo/logo.png" class="logo">
+                <a href="./mainpage.html">Glazed daily life</a>
+            </div>
+            <div class="right_top_banner">
+                <a href="./login.html">로그인</a>
+                <a>회원가입</a>
+                <a class="site">사이트설명</a>
+                <div class="site_explan">
+                    해당 사이트는 Glazed Lee의 음식, 여행, 유머, 게임 등의 내용을 다루는 사이트입니다.
+                </div>
+            </div>
+        </div>
+        <div class="signup_menu">
+            <a>회원가입</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="signup_input">
+            <form action="" name="signup">
+                <ul>
+                    <li>아이디</li>
+                    <li><input class="input_id" type="text" name="id" id="id" required placeholder="아이디 입력"></li>
+                    <input type="button" value="중복확인" class="id_check">
+                </ul>
+                <ul>
+                    <li>비밀번호</li>
+                    <input class="input_pwd" type="password" name="password" id="password" required placeholder="비밀번호 입력">
+                </ul>
+                <ul>
+                    <li>비밀번호 확인</li>
+                    <input class="input_pwd_check" type="password" name="password_check" id="password_check" required placeholder="비밀번호 확인" readonly>
+                </ul>
+                <ul>
+                    <li>이메일 주소</li>
+                    <input class="email" type="email" name="email" id="email" placeholder="이메일@주소">
+                </ul>
+                <ul>
+                    <li>성별</li>
+                    <div class="gender">
+                    <input type="radio" name="gender" id="gender" value="m" required>남&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="gender" value="w" required>여
+                </div>
+                </ul>
+                <input class="submit" type="submit" value="회원가입하기" name="submit" id="submit">
+                <input class="reset" type="reset" value="다시입력" name="reset" id="reset">
+            </form>
+        </div>
+        <div class="back_home">
+            <a href="./mainpage.html">홈페이지로 돌아가기</a>
+        </div>
+    </div>
+    <div class="lower_banner">
+        <a href="">공지사항</a> |
+        <a href="">이용약관</a> |
+        <a href="">이메일무단수집거부</a> |
+        <a href="./report.html">제보방법</a> |
+        <a href="">정보공개알림</a>
+    </div>
+</body>
+</html>

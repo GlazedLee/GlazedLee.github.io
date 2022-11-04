@@ -1,0 +1,56 @@
+.top_banner{
+    width: 1200px;
+    height: 270px;
+    position: relative;
+}
+.background_image{
+    position: absolute;
+    width: 1200px;
+    height: 260px;
+}
+.homepage{
+    position: absolute;
+    height: 50px;
+    font-size: 50px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.right_top_banner{
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+.site:active + .site_explan{
+    display: block;
+}
+.site_explan{
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.lower_banner{
+    width: 1200px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border-top: 2px solid gray;
+}
+.lower_banner a{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+.main{
+    width: 1200px;
+    position: relative;
+}
+.lower_banner a:hover{
+    font-weight: 900;
+}
